@@ -1,4 +1,5 @@
- *{
+/* Part-1 */
+*{
   font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif ;
   margin: 0;
   padding: 0;
@@ -8,6 +9,8 @@
 
  body {
   background: #113046;
+  color: #e2e2e2;
+
  }
 
  .header {
@@ -45,3 +48,153 @@
   color :#45ccc1
 
 }
+
+/* Part-2 */
+
+.home {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  padding: 0 10%;
+
+}
+
+.home-content {
+  max-width: 600px;
+}
+
+.home-content h1 {
+  font-size: 56px;
+  font-weight: 700;
+}
+
+.home-content h3 {
+  font-size: 32px;
+  font-weight: 700;
+  color :#45ccc1;
+  line-height: 1.2;
+}
+
+.home-content p {
+  font-size: 16px;
+  margin: 20px 0 40px;
+
+}
+
+.home-content .btn-box {
+  width: 345px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+}
+
+
+.btn-box a {
+  position: relative;
+  width: 150px;
+  height: 100%;
+  background-color: #45ccc1;
+  border: 2px solid #45ccc1;
+  border-radius: 8px;
+  display: inline-flex;
+  font-size: 18px;
+  color: #113046;
+  text-decoration: none;
+  font-weight: 600;
+  align-items: center ;
+  justify-content: center;
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
+} 
+
+
+.btn-box a:hover {
+  color: #45ccc1;
+}
+
+
+.btn-box a:nth-child(2) {
+  background: transparent;
+  color: #45ccc1;
+
+}
+
+.btn-box a:nth-child(2):hover {
+  color: #113046;
+}
+
+.btn-box a:nth-child(2)::before {
+  background:#45ccc1;
+}
+
+.btn-box a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  background: #113046;
+  z-index: -1;
+  transition: .5s;
+}
+
+.btn-box a:hover::before {
+  width: 100%;
+} 
+
+/* demooo
+.btn-box a {
+  position: absolute;
+  left: 0 ;
+  top: -80px;
+  width: 200px;
+  height: 200px;
+  background: #45ccc1;
+  box-shadow: inset 0 0 50px #113046;
+  transition: .5s;
+
+}
+.btn-box a::before,
+.btn-box a::after {
+  content: '';
+  position: absolute;
+  width: 200%;
+  height: 200%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%, -75%);
+}
+
+.btn-box a::before {
+  border-radius: 45%;
+  background: rgba (20,20,20,1);
+  animation: animate 5s linear infinite;
+}
+.btn-box a::after {
+  border-radius: 40%;
+  background: rgba (20,20,20,0.5);
+  animation: animate 10s linear infinite;
+      
+}
+
+@keyframes animate {
+   0% 
+   {
+    transform: translate(-50%, -75%) rotate(0deg);
+   }
+   100% 
+   {
+    transform: translate(-50%, -75%) rotate(360deg);
+   }
+}
+part 3
+*/
+
+
+
+
+
+
+
