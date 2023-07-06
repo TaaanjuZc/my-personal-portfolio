@@ -8,7 +8,6 @@
 
 
  body {
-  background: #113046;
   color: #e2e2e2;
 
  }
@@ -53,9 +52,14 @@
 
 .home {
   height: 100vh;
+  /*while staring part 4 this part was edited*/
+  background: url(FB_IMG_1688625855095-02.jpeg) no-repeat;
+  background-size: cover;
+  background-position: center;
   display: flex;
   align-items: center;
   padding: 0 10%;
+  
 
 }
 
@@ -156,8 +160,8 @@
   transition: .5s;
 
 }
-.btn-box a::before,
-.btn-box a::after {
+.btn-box a:before,
+.btn-box a:after {
   content: '';
   position: absolute;
   width: 200%;
@@ -167,12 +171,12 @@
   transform: translate(-50%, -75%);
 }
 
-.btn-box a::before {
+.btn-box a:before {
   border-radius: 45%;
   background: rgba (20,20,20,1);
   animation: animate 5s linear infinite;
 }
-.btn-box a::after {
+.btn-box a:after {
   border-radius: 40%;
   background: rgba (20,20,20,0.5);
   animation: animate 10s linear infinite;
@@ -193,8 +197,55 @@ part 3
 */
 
 
+.home-sci {
+  position: absolute;
+  bottom: 50px;
+  width: 170px;
+
+  display: flex;
+  justify-content: space-evenly;
+}
+
+.home-sci a {
+  position: relative;
+  display: inline-flex;
+  width: 30px;
+  height: 30px;
+  background: transparent;
+  border: 2px solid #45ccc1;
+  border-radius: 50%;
+  font-size: 18px;
+  color: #45ccc1;
+  text-decoration: none;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+  overflow: hidden;
+  transition: .5s;
+}
+
+.home-sci a :hover{
+  color: #113046;
+}
+.home-sci a::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background: #45ccc1;
+  z-index: -1;
+  transition: .5s;
+}
 
 
+
+.home-sci a:hover::before {
+  height: 100%;
+} 
+
+/* part -4 */
 
 
 
